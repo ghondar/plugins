@@ -78,7 +78,6 @@ final class VideoPlayer {
     if (isHTTP(uri)) {
       DefaultHttpDataSource.Factory httpDataSourceFactory =
           new DefaultHttpDataSource.Factory()
-              .setUserAgent("ExoPlayer")
               .setAllowCrossProtocolRedirects(true);
 
       if (httpHeaders != null && !httpHeaders.isEmpty()) {
